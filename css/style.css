@@ -1,0 +1,77 @@
+/* Barra de navegación */
+.navbar {
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-bottom: 24px;
+    background-color: #222831;
+    height: 81px;
+
+}
+
+.text-white {
+    color: #F1F5F9;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+}
+.navbar-collapse {
+    justify-content: space-between;
+}
+
+/* Seccion hero */
+.hero {
+    height: 783px;
+    background-color: #222831;
+}
+
+.hero-img {
+    height: 704px;
+    width: 1200px;
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+/* Seccion sobre mi */
+.sobre-mi {
+    height: 864px;
+    background-color: #F1F5F9;
+}
+
+/* Seccion areas */
+.areas {
+    height: 864px;
+    background-color: #222831;
+}
+
+/* Seccion proyectos */
+.proyectos {
+    height: 864px;
+    background-color: #F1F5F9;
+
+}
+
+
+/* Footer */
+
+.footer {
+    height: 153px;
+    background-color: #222831;
+}
+
+
+/* cuando el dispositivo tenga ese tamaño escondemos ese ic*/
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+    
+}
