@@ -43,8 +43,13 @@
 /* Seccion sobre mi */
 .sobre-mi {
     height: 864px;
-    background-color: #F1F5F9;
+    background-color: #1e1e1e;
 }
+
+.sobre-mi p {
+    color: white;
+}
+
 
 /* Seccion areas */
 .areas {
