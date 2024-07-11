@@ -27,7 +27,6 @@
 
 
 
-
 /* Seccion sobre nosotros */
 .sobre-nosotros {
     height: 864px;
@@ -43,11 +42,112 @@
 }
 
 
-/* Seccion contacto */
-.contacto {
-    height: 864px;
+/* Modal contacto */
+.custom-modal {
+    background-color: #393E46;
+    width: 400px;
+    color: #F1F5F9;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-dialog {
+    max-width: 100%;
+    width: 400px;
+    margin: 1rem auto;
+}
+
+.custom-modal .modal-footer,
+.custom-modal .modal-header {
+    border-color: #393E46;
+}
+
+.custom-modal h2 {
+    color: #F1F5F9;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    padding-right: 15px;
+}
+
+.modal-content {
+    background-color: #393E46;
+    color: #F1F5F9;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-modal p {
+    color: #F1F5F9;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+}
+
+.custom-button-close {
     background-color: #F1F5F9;
 }
+
+.modal-header {
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-modal label {
+    padding-top: 16px;
+    color: #F1F5F9;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.form-control {
+    color: #F1F5F9;
+    background-color: #393E46;
+    width: 100%; 
+    max-width: 300px; 
+}
+
+.custom-modal textarea {
+    width: 100%;
+    max-width: 300px; 
+    height: 170px;
+    resize: none;
+}
+
+.form-control:focus {
+    color: #F1F5F9;
+    background-color: #393E46;
+    box-shadow: 0 0 5px #00ADB5;
+}
+
+.form-control::placeholder {
+    color: #F1F5F9;
+    opacity: 1;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #393E46 inset !important;
+    -webkit-text-fill-color: #F1F5F9 !important;
+}
+
+.custom-button {
+    background-color: #00ADB5;
+    color: white;
+    border-radius: 8px;
+    padding: 12px 8px;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.custom-button:hover,
+.custom-button:focus,
+.custom-button:active {
+    background-color: #00ADB5;
+    color: #F1F5F9;
+}
+
 
 
 /* Footer */
@@ -56,11 +156,10 @@
 
 }
 
-
 .custom-icon {
     font-size: 20px;
     color: white;
-    margin: 3px;
+    margin: 13px;
 }
 
 /* cuando el dispositivo tenga ese tamaño escondemos ese ic*/
