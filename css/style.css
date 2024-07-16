@@ -13,7 +13,7 @@
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 14px;
 }
 .navbar-collapse {
     justify-content: space-between;
@@ -23,14 +23,67 @@
 .hero {
     height: 783px;
     background-color: #222831;
+    color: #F1F5F9;
+    display: flex;
+    flex-direction: row;
+}
+.hero-img {
+    padding: 10px 0px 48px 48px;
+
+}
+.hero-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+
 }
 
+.hero-content {
+    margin-left: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+}
+.hero-content h2 {
+    color: #F1F5F9;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 67px;
+}
+.hero-content p {
+    color: #F1F5F9;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    
+    font-size: 22px;
+}
+.hero-custom-button {
+    background-color: #00ADB5;
+    width: 360px;
+    height: 57px;
+    color: #F1F5F9;
+    border-radius: 8px;
+    padding: 12px 8px;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    margin-top: 25px;
+}
+.hero-s {
+    height: 704px;
+    display: flex;
+
+}
 
 
 /* Seccion sobre nosotros */
 .sobre-nosotros {
     height: 864px;
-    background-color: #F1F5F9;
+    background-color: #d6dde7;
 }
 
 
@@ -121,7 +174,7 @@
 }
 
 .form-control::placeholder {
-    color: #F1F5F9;
+    color: #acacac;
     opacity: 1;
 }
 
