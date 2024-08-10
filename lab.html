@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar con Borde Inferior</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar fijo */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 10px 20px;
+            z-index: 1000; /* Asegura que el navbar esté por encima del contenido */
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            display: inline-block;
+            position: relative;
+        }
+
+        nav a.active {
+            border-bottom: 2px solid yellow; /* Borde inferior amarillo para el enlace activo */
+        }
+
+        section {
+            padding: 100px 20px; /* Ajusta el padding superior para no estar debajo del navbar */
+            height: 100vh; /* Altura de cada sección */
+        }
+
+        section:nth-of-type(odd) {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Inicio</a>
+        <a href="#services">Servicios</a>
+        <a href="#about">Sobre nosotros</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <section id="home">
+        <h2>Inicio</h2>
+        <p>Contenido de la sección Inicio...</p>
+    </section>
+    <section id="services">
+        <h2>Servicios</h2>
+        <p>Contenido de la sección Servicios...</p>
+    </section>
+    <section id="about">
+        <h2>Sobre nosotros</h2>
+        <p>Contenido de la sección Sobre nosotros...</p>
+    </section>
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Contenido de la sección Contacto...</p>
+    </section>
+
+    <script>
+        // JavaScript para añadir la clase activa a los enlaces
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('nav a');
+            const sections = document.querySelectorAll('section');
+
+            function setActiveLink() {
+                let index = sections.length;
+
+                while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+                
+                links.forEach((link) => link.classList.remove('active'));
+                links[index].classList.add('active');
+            }
+
+            setActiveLink();
+            window.addEventListener('scroll', setActiveLink);
+        });
+    </script>
+</body>
+</html>

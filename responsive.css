@@ -1,0 +1,67 @@
+
+
+@media screen and (max-width:878px){
+    nav ul{
+        display: none;
+        width: 50vw;
+        height: fit-content;
+        position: absolute;
+        top: 4vh;
+        padding: 20px 0;
+        background-color:var(--oscuro2);
+        border-radius: 5px;
+    }
+    nav ul li{
+        margin: 10px 10px;
+    }
+    nav .logo img{
+        display: none;
+    }
+    nav .menu-icon{
+        display: block;
+        width: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+    nav #contact{
+        text-align: center;
+    }
+    nav li:nth-child(1) a::before{
+        content: "\f015"; /* Código del icono de Font Awesome (en este caso, "fa-home") */
+        font-family: "Font Awesome 6 Free"; /* Fuente de Font Awesome */
+        font-weight: 900; /* Estilo de fuente para los iconos de Font Awesome */
+        margin-right: 8px;
+    }
+    nav li:nth-child(2) a::before{
+        content: "\f2bb"; /* Código del icono de Font Awesome (en este caso, "fa-home") */
+        font-family: "Font Awesome 6 Free"; /* Fuente de Font Awesome */
+        font-weight: 900; /* Estilo de fuente para los iconos de Font Awesome */
+        margin-right: 8px;
+    }
+    nav li:nth-child(3) a::before{
+        content: "\f121"; /* Código del icono de Font Awesome (en este caso, "fa-home") */
+        font-family: "Font Awesome 6 Free"; /* Fuente de Font Awesome */
+        font-weight: 900; /* Estilo de fuente para los iconos de Font Awesome */
+        margin-right: 8px;
+    }
+    nav li:nth-child(4) a::before{
+        content: "\f0c0"; /* Código del icono de Font Awesome (en este caso, "fa-home") */
+        font-family: "Font Awesome 6 Free"; /* Fuente de Font Awesome */
+        font-weight: 900; /* Estilo de fuente para los iconos de Font Awesome */
+        margin-right: 8px;
+    }
+}
+@media screen and (max-width:521px){
+    nav .logo, nav .menu{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:200px){
+    nav .logo{
+        display: none;
+    }
+    
+}
