@@ -25,3 +25,22 @@
     setActiveLink();
     window.addEventListener('scroll', setActiveLink);
 });
+
+// Animacion para los h1
+document.addEventListener("DOMContentLoaded", function() {
+    // Crear una instancia de Intersection Observer
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animado');
+            } else {
+                entry.target.classList.remove('animado');
+            }
+        });
+    }, { threshold: 0.1 }); // Ajusta el umbral según sea necesario
+
+    // Seleccionar todos los h1 con la clase 'animacion'
+    document.querySelectorAll('.animacion').forEach(h1 => {
+        observer.observe(h1);
+    });
+});

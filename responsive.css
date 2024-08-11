@@ -29,7 +29,7 @@
         text-align: center;
     }
     nav li:nth-child(1) a::before{
-        content: "\f015"; /* Código del icono de Font Awesome (en este caso, "fa-home") */
+        content: "\f015"; 
         font-family: "Font Awesome 6 Free"; /* Fuente de Font Awesome */
         font-weight: 900; /* Estilo de fuente para los iconos de Font Awesome */
         margin-right: 8px;

@@ -14,12 +14,14 @@ body{
     width: 100vw;
     font-family: sans-serif;
     position: relative;
+    animation: desvanecer 3s ease-in-out;
 }
+
 /* ------------------------------------------  Header y nav*/
 header{
     width: 100vw;
     height: 100vh;
-    background-color: var(--oscuro1);
+    background-color: var(--oscuro2);
 }
 nav{
     width: 100%;
@@ -28,7 +30,8 @@ nav{
     position: fixed;
     top: 0;
     color: var(--texto);
-     display: flex;
+    display: flex;
+    z-index:99;
 }
 nav ul, nav .logo{
     height: 100%;
@@ -90,9 +93,90 @@ nav .menu-icon{
 nav ul li  a.active {
   border-bottom: solid 1px white;
 }
+/* --------------------------------------------main */
+main{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90vw;
+    height: 40vh;
+    color: white;
+}
+main h1{
+    font-size: clamp(2rem,10vw,9rem);
+}
+
+main h2{
+    font-size: clamp(1rem,4vw,5rem);
+    margin-top: 50px;
+}
+main h2 span {
+    opacity: 0;
+    animation: colorGlow 5s ease-in-out forwards, fadeInOut 5s ease-in-out forwards;
+}
+
+@keyframes colorGlow {
+    0% {
+        color: #d8a20f; /* Azul inicial */
+      
+    }
+    50% {
+        color: #f0a330; /* Cyan intermedio */
+   
+    }
+    100% {
+        color: #e0f38d; /* Azul final */
+    }
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+h2 span:nth-child(1) { animation-delay: 1s; }
+h2 span:nth-child(2) { animation-delay: 1.2s; }
+h2 span:nth-child(3) { animation-delay: 1.4s; }
+h2 span:nth-child(4) { animation-delay: 1.6s; }
+h2 span:nth-child(5) { animation-delay: 1.7s; }
+h2 span:nth-child(6) { animation-delay: 1.8s; }
+h2 span:nth-child(7) { animation-delay: 1.9s; }
+h2 span:nth-child(8) { animation-delay: 2s; }
+h2 span:nth-child(9) { animation-delay:  2.1s; }
+h2 span:nth-child(10) { animation-delay: 2.2s; }
+h2 span:nth-child(11) { animation-delay: 2.4s; }
+h2 span:nth-child(12) { animation-delay: 2.5s; }
+h2 span:nth-child(13) { animation-delay: 2.6s; }
+h2 span:nth-child(14) { animation-delay: 2.7s; }
+h2 span:nth-child(15) { animation-delay: 2.8s; }
+h2 span:nth-child(16) { animation-delay: 2.9s; }
+h2 span:nth-child(17) { animation-delay: 3s; }
+h2 span:nth-child(18) { animation-delay: 3.1s; }
+h2 span:nth-child(19) { animation-delay: 3.2s; }
+h2 span:nth-child(20) { animation-delay: 3.3s; }
+h2 span:nth-child(21) { animation-delay: 3.4s; }
 
 /*------------------------------------------- Secciones */
 section{
     width: 100vw;
     height: 100vh;
+}
+
+section h1{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 3rem;
+    color: #333;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.animado {
+    opacity: 1;
+    transform: translateY(0);
 }
