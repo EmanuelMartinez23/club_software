@@ -101,6 +101,14 @@ header .banner{
 
 /* Sobre el club */
 
+#aboutUs{
+    background: url(/images/backbroundHeader.png),rgb(20, 20, 20);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
 #aboutUs div{
     margin: 50px 0;
 }
