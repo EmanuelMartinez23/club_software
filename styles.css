@@ -128,8 +128,8 @@ header .banner{
 
 /* testimonios */
 .img-area{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
 }
 .img-area img{
     object-fit: cover;
