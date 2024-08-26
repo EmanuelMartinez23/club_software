@@ -2,9 +2,13 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 *{
+    margin: 0;
     box-sizing: border-box;
+    padding: 0;
+    font-family: sans-serif;
 }
 body{
+    width: 100vw;
     background-color: rgb(20, 20, 20)!important;
     font-family: sans-serif;
     color: white!important;
@@ -12,40 +16,43 @@ body{
 section{
     margin: 100px 0;
     position: relative;
+    padding: 20px;
 }
 h1{
     margin: 30px;
 }
-h1,p{
+h1,p,h2{
     text-align: center;
 }
+
 /* nav */
 nav{
+    width: 100vw;
     background-color: #181717!important;
-    backdrop-filter: blur(15px);
 }
 nav a{
     color: rgb(243, 243, 243)!important;
 }
+nav a:hover{
+    transform: scale(1.2);
+}
+nav i{
+    margin-right: 10px;
+}
+#addUser{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 200%;
+}
+
 @media  screen and (min-width:576px) {
     .nav-item i{
         display: none;
     }
 }
 
-#formUser{
-    display: block;
-    color: rgb(255, 255, 255);
-    width: 30px;
-    height: 30px;
-    background-color: rgb(255, 0, 0);
-    border-radius: 100%;
-    padding: 5px;
-    font-size: 120%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 /* header */
 header{ 
@@ -56,7 +63,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-   background-blend-mode: multiply;
+    background-blend-mode: multiply;
 }
 header h1{
     color: white;
@@ -64,15 +71,16 @@ header h1{
     top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size: 6rem;
+    font-size:clamp(4em,10vw,7em);
 }
 header h2{
     position: absolute;
     top: 65%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size: 3rem;
+    font-size: clamp(2em,5vw,4em);
     color: gray;
+    text-align: center;
 }
 header .banner{
     width: 100vw;
@@ -82,10 +90,17 @@ header .banner{
     left: 0;
 }
 
-
-
+/* areas */
+.area-img img{
+    height: 40px;
+    filter: brightness(70%);
+}
+#areas p{
+    margin-top:  50px ;
+}
 
 /* Sobre el club */
+
 #aboutUs div{
     margin: 50px 0;
 }
@@ -96,8 +111,10 @@ header .banner{
     transform: translate(-50%);
     margin: 40px 0;
 }
-#aboutUs h2 span{
+
+#areas h2 span{
     color: rgb(168, 228, 255)!important;
+  
 
 }
 

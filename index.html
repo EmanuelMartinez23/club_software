@@ -12,23 +12,25 @@
 <body>
     <!-- nav -->
      
-    <nav class="navbar navbar-expand-lg position-fixed top-0 z-3 w-100 ">
+    <nav class="navbar navbar-expand-lg position-fixed top-0 z-3 ">
         <div class="container-fluid position-sticky top-0">
-             <a class="navbar-brand" href="#">
+             <div class="navbar-brand" href="#">
                   <img src="images/RedLogoOrigi.png" alt="" width="30" height="30" class="me-2">
-                  <span>Club de Software</span>
-             </a>
-             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                  <span class="text-white">Club de Software</span>
+             </div>
+             <button class="navbar-toggler" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon text-white"></span>
              </button>
              <div class="collapse navbar-collapse pb-2 pb-lg-0" id="navbarSupportedContent">
                   <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-lg-3">
                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="#">
+                              <i class="bi bi-house"></i>
+                              Inicio</a>
                        </li>
                        <li class="nav-item">
                             <a class="nav-link" href="#">
-                                <i class="bi bi-house"></i>
+                              <i class="bi bi-laptop"></i>
                                 Sobre el club
                             </a>
                        </li>
@@ -51,14 +53,14 @@
                             </a>
                        </li>
                   </ul>
-                  <div class="d-flex justify-content-center align-items-center">
-                    <a href="" id="formUser"><i class="bi bi-person-plus-fill"></i></a>
+                  <div id="addUser">
+                    <a href="" id="formUser"><i class="bi bi-person-circle"></i></a>
                 </div>
              </div>
         </div>
    </nav>
    <header class="container-fluid">
-     <h1>Software Club</h1>
+     <h1 class="container-fluid">Software Club</h1>
      <h2>Inovemos juntos</h2>
      <img src="/images/path24.png" class="banner" alt="">
    </header>
@@ -70,42 +72,66 @@
           <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed culpa alias, sit saepe reiciendis eligendi iure quas nostrum ea! Eius, molestiae cum. Nesciunt delectus aperiam architecto. Expedita mollitia architecto eaque!</p>
      </div>
 
-          <div class="row py-5 border-bottom">
-               <div class="col-md-7 align-self-center">
-                    <h2 class="display-3">En el club <span class="text-muted fs-1 ms-1">Aprendemos juntos</span></h2>
-                    <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit delectus, quos in, tempore, earum sunt eum facilis odio.</p>
-               </div>
-               <div class="col-md-5">
-                    <img src="images/IMG_3355.JPG" alt="" class="w-100 h-100 rounded">
-               </div>
-          </div>
-
-
-          <div class="row py-5">
-               <div class="col-md-7 align-self-center order-md-2">
-                    <h2 class="display-3">Crea <span class="text-muted fs-1 ms-1">Proyectos</span></h2>
-                    <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit delectus, quos in, tempore, earum sunt eum facilis odio.</p>
-               </div>
-
-
-               <div class="col-md-5 order-md-1">
-                    <img src="images/IMG_3361.JPG" alt="" class="w-100 h-100 rounded">
-               </div>
-          </div>
-          <div class="row py-5 border-bottom">
-               <div class="col-md-7 align-self-center">
-                    <h2 class="display-3">Desarrolla <span class="text-muted fs-1 ms-1">Nuevas habilidades</span></h2>
-                    <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit delectus, quos in, tempore, earum sunt eum facilis odio.</p>
-               </div>
-
-
-               <div class="col-md-5">
-                    <img src="images/torneo2.JPG" alt="" class="w-100 h-100 rounded">
-               </div>
-          </div>
-
    </section>
-     <!-- Proyectos-->
+   
+   <!-- areas -->
+    <section id="areas" class="container">
+     <h1>Que aprenderas</h1>
+     <div class="row py-5 border-bottom">
+          <div class="col-md-7 align-self-center">
+               <h2 class="display-3">Desarrolla <br>  <span class="text-muted fs-1 ms-1">Paginas web</span></h2>
+               <div class="d-flex flex-wrap justify-content-center align-items-center mt-4 area-img"  >
+                    <img src="images/areas/html.png"  rounded m-2" alt="Imagen 1">
+                    <img src="images/areas/css.png" class="img-fluid rounded m-2" alt="Imagen 2">
+                    <img src="images/areas/JavaScript-logo.png" class="img-fluid rounded m-2" alt="Imagen 3">
+                    <img src="images/areas/java.png" class="img-fluid rounded m-2" alt="Imagen 4">
+                    <img src="images/areas/images.png" class="img-fluid rounded m-2" alt="Imagen 4">
+                    <img src="images/areas/internet.png" class="img-fluid rounded m-2" alt="Imagen 4">
+                </div>
+               <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit delectus, quos in, tempore, earum sunt eum facilis odio.</p>
+              
+          </div>
+          <div class="col-md-5">
+               <img src="/images/what-is-a-web-developer.avif" alt="" class="w-100 h-100 rounded">
+          </div>
+     </div>
+
+
+     <div class="row py-5">
+          <div class="col-md-7 align-self-center order-md-2">
+               <h2 class="display-3">Crea <span class="text-muted fs-1 ms-1">Videojuegos</span></h2>
+               <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit delectus, quos in, tempore, earum sunt eum facilis odio.</p>
+               <div class="d-flex flex-wrap justify-content-center align-items-center mt-4 area-img"  >
+                    <img src="images/areas/scratch.png"  rounded m-2" alt="Imagen 1">
+                    <img src="images/areas/python.png" class="img-fluid rounded m-2" alt="Imagen 2">
+                    <img src="images/areas/unity.png" class="img-fluid rounded m-2" alt="Imagen 2">
+                   
+                </div>
+          </div>
+
+
+          <div class="col-md-5 order-md-1">
+               <img src="images/videojuego.png" alt="" class="w-100 h-100 rounded">
+          </div>
+     </div>
+     <div class="row py-5 border-bottom">
+          <div class="col-md-7 align-self-center">
+               <h2 class="display-3">Dale vida <br> <span class="text-muted fs-1 ms-1">A tus dibujos</span></h2>
+               <div class="d-flex flex-wrap justify-content-center align-items-center mt-4 area-img"  >
+                    <img src="images/areas/ilustrator.jpg"  rounded m-2" alt="Imagen 1">
+                    <img src="images/areas/Inkscape_Logo.svg.png" class="img-fluid rounded m-2" alt="Imagen 2">
+                    <img src="images/areas/leonardo.jpg" class="img-fluid rounded m-2" alt="Imagen 2">
+                   
+                </div>
+               <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit delectus, quos in, tempore, earum sunt eum facilis odio.</p>
+          </div>
+
+
+          <div class="col-md-5">
+               <img src="images/areas/ilustracion.jpg" alt="" class="w-100 h-100 rounded">
+          </div>
+     </div>
+    </section>
    
 
      <!-- Testimonios -->
